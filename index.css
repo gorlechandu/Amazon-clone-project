@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #dadada;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* nav-bar style code is start  */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #131921;
+  padding: 10px 20px;
+  color: #fff;
+}
+.nav-country {
+  display: flex;
+  align-items: end;
+  margin-left: 15px;
+  font-size: 13px;
+  color: #c4c4c4;
+}
+.nav-country h1 {
+  color: #fff;
+  font-size: 14px;
+}
+/* nav-search style */
+.nav-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: grey;
+  max-width: 1000px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  margin-left: 15px;
+  box-shadow: 1pc;
+}
+.nav-search-category {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 5px;
+  background: #e5e5e5;
+  border-radius: 4px 0 0 4px;
+}
+.nav-search-input {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+.nav-search-icon {
+  max-width: 41px;
+  padding: 8px;
+  background: #ffff00;
+  border-radius: 0 4px 4px 0;
+}
+.flag-icon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600px;
+  margin-left: 15px;
+}
+.nav-sign {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.nav-cart {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+/* navbar buttom style */
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 20px;
+  background: #232f3e;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+}
+
+.nav-bottom div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 5oo;
+}
+/* header slides part style start here  */
+.header-slides ul {
+  display: flex;
+  overflow-y: hidden;
+  align-items: center;
+}
+.header-image {
+  max-width: 100%;
+  mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.header-slides a {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 5vh 1vw;
+  background: #ffffff4f;
+  color: #0000007b;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+}
+.next-btn {
+  right: 0;
+}
+/*  header slides part style end here  */
+
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+.box-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px;
+  background: #fff;
+  min-height: 200px;
+  max-width: 24%;
+  z-index: 1;
+}
+.box-col a {
+  font-size: 13px;
+  color: #009999;
+  font-weight: 500;
+}
+.header-box {
+  margin-top: -2ovw;
+}
+
+/* slidersin only produts  */
+/* Wrapper Styling */
+.products-Slider {
+  padding: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.products-Slider h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+/* Horizontal Scroll Area */
+.products {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide Scrollbar */
+.products::-webkit-scrollbar {
+  height: 6px;
+}
+
+.products::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Image Styling */
+.products img {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.products img:hover {
+  transform: scale(1.05);
+}
+
+/* another sliders product  style*/
+
+.products {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-img-containner {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.product-img-containner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-price {
+  color: #e60023;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.product-price-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-card h4 {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+/* another */
+.products-sliders-with-price h2 {
+  padding: 5px 5px;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.products-sliders-with-price span {
+  color: green;
+}
+/* Default: Hide scrollbar */
+
+.products {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.products::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* On hover: show scrollbar still pending one  scroll bar size i want medium size */
+.products:hover {
+  scrollbar-width: auto;
+  scrollbar-color: #888 transparent;
+}
+
+.products:hover::-webkit-scrollbar {
+  height: 12px;
+}
+
+.products:hover::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.products:hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* footer part style here start */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #131921;
+  padding: 20px 60px;
+}
